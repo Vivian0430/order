@@ -1,0 +1,61 @@
+.productMenu{
+    width: 20vw;
+    height: 84vh;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    background-color: rgb(245,245,245);
+}
+.menu-item{
+    height: 8vh;
+    width: 20vw;
+    text-align: center;
+    line-height: 8vh;
+    outline: none;
+}
+.menu-item div{
+    height: 8vh;
+    width: 20vw;
+    outline: none;
+}
+.bookList{
+    width: 80vw;
+    height: 20vh;
+    margin: 10px auto;
+    padding: 1vh;
+    display: flex;
+}
+.bookList img{
+    width: 18vh;
+    height: 18vh;
+    display: inline-block;
+}
+.bookList .listRight{
+    position: relative;
+    flex: 1;
+}
+.bookList .listRight p{
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+.bookList .listRight p:first-of-type{
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: 1vh;
+}
+
+.bookList .listRight .addToCart span{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    margin: 0 5px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.active{
+    background-color: #fff;
+}

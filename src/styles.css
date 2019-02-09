@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'iconfont';  /* project id 1012674 */
+  src: url('//at.alicdn.com/t/font_1012674_okv3cn4il.eot');
+  src: url('//at.alicdn.com/t/font_1012674_okv3cn4il.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1012674_okv3cn4il.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1012674_okv3cn4il.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1012674_okv3cn4il.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1012674_okv3cn4il.svg#iconfont') format('svg');
+}
+
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 18px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-home:before {
+    content: "\ebdc";
+  }  
+  .icon-list:before {
+    content: "\ebda";
+  }  
+  .icon-cart:before {
+    content: "\ebd8";
+  }  
+  .icon-mine:before {
+    content: "\ebd2";
+  }  
+  .icon-add:before {
+    content: "\e618";
+  }
+  .icon-addcart:before {
+    content: "\e607";
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: '微软雅黑';
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.page-body{
+    height: 92vh;
+    flex: 1;
+}
+.page-content{
+    height: 84vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

@@ -1,0 +1,34 @@
+<div class="page-body">
+    <app-common-header [title]="'菜单'"></app-common-header>
+    <div class="page-content">
+        <div class="productMenu">
+            <!-- <div class="menu-item" style="color:#2d78f4;font-size: 15px;">全部</div> -->
+            <div class="menu-item" *ngFor="let item of result">
+                <div class="isChoosed?'active':''" [routerLink]="[ '/list']"  [queryParams]="{id:item.id}">{{item.name}}</div>
+            </div>
+        </div>
+        <div style="width:80vw;display:inline-block;height:84vh;position: relative;left: 20vw;">
+        <div class="bookList" *ngFor="let item of list">
+            <img [src]=item.image [routerLink]="[ '/detail']" [queryParams]="{id:item.id}">
+            <div class="listRight">
+                <p>
+                    {{item.name}}
+                </p>
+                <p>
+                    {{item.describ}}
+                </p>
+                <p>
+                    ￥{{item.price}}
+                </p>
+                <!-- <p>
+                    {{item.category.name}}
+                </p> -->
+                <div class="addToCart">
+                    <span class="iconfont icon-add" style="color: #2d78f4;"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<app-nav></app-nav>
